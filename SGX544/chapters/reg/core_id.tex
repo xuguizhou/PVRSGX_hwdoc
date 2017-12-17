@@ -1,0 +1,15 @@
+\section{Core ID Register (Default Value: 0xXXXXXXXX)}
+
+\begin{longtable}[c]{ |C{\regdscBit\textwidth}|C{\regdscRW\textwidth}|C{\regdscHex\textwidth}|p{\regdscDesc\textwidth}| } \hline
+	\multicolumn{3}{ |c| }{Offset: 0x0020} &  Registername: \textbf{CORE\_ID} \\ \hline
+	Bit & R/W & Default/Hex & Description \\ \hline
+	31:16 & R & / & CORE\_ID\_ID  \newline \\ \hline
+	15:12 & R & /& CORE\_ID\_CONFIG\_SLC \newline \\ \hline
+	11:81& R & / & SGX531 CORE\_ID\_CONFIG\_CORES  \newline \\ \hline
+	7:2 & R & / & CORE\_ID\_CONFIG \newline \\ \hline
+	1 & R & / & CORE\_ID\_CONFIG\_BASE \newline \\ \hline
+	0 & R & / & CORE\_ID\_CONFIG\_MULTI \newline  \\ \hline
+	\caption{Core ID Register}
+	\label{tab:reg_core_id}
+\end{longtable}
+

@@ -1,0 +1,137 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[a4paper,12pt,
+headsepline,        % Linie Kopfzeile / Text
+oneside,            % einseitig
+%pointlessnumbers,   % kein Punkt nach letzter Gliederungsziffer
+BCOR15mm          % mehr li. Rand zum Binden der Arbeit
+]{scrbook}
+
+
+\KOMAoptions{DIV=last}
+\usepackage[a4paper, left=1cm, right=1cm, top=2cm, bottom=3cm]{geometry}
+\pagestyle{headings}
+\usepackage{blindtext}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+% Helvetica als Standard-Dokumentschrift
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{dcolumn}
+\usepackage{url}              % \url{http://...} in Schreibmaschinenschrift
+\usepackage{color}            % zum Setzen farbigen Textes
+\usepackage{amssymb, amsmath} % Pakete für Mathe-Umgebungen und -Symbole
+\usepackage{setspace} % Paket für div. Abstände, z.B. ZA
+
+% hier Namen etc. einsetzen
+\newcommand{\SGXtype}{SGX544}
+\newcommand{\fullname}{Philipp Rossak}
+\newcommand{\email}{embed3d@gmail.com}
+
+\newcommand{\titel}{Reverse-Engineered Datasheet PowerVR \SGXtype}
+\newcommand{\titeltext}{Reverse-Engineered Datasheet\\* PowerVR \SGXtype}
+\newcommand{\jahr}{2017}
+% Table Defintions
+\newcommand{\regdscBit}{0.1}
+\newcommand{\regdscRW}{0.1}
+\newcommand{\regdscHex}{0.15}
+\newcommand{\regdscDesc}{0.55}
+
+%color in tables
+\usepackage{colortbl}
+\definecolor{Gray}{rgb}{0.80784, 0.86667, 0.90196} %dunkelblau
+\definecolor{Lightgray}{rgb}{0.9176, 0.95, 0.95686} %hellblau
+\definecolor{Akzent}{rgb}{0.6627, 0.63529, 0.55294} %akzentfarbe
+\setlength{\arrayrulewidth}{0.1pt}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.4ex plus 0.35ex minus 0.3ex}
+
+% Tiefe, bis zu der Überschriften in das Inhaltsverzeichnis kommen
+\setcounter{tocdepth}{3} % ist Standard
+
+\pdfinfo{
+	/Author (\fullname)
+	/Title (\titel)
+	/Producer     (pdfeTex 3.14159-1.30.6-2.2)
+	/Keywords ()
+}
+
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle=\titel,
+	pdfauthor=\fullname,
+	pdfsubject={Labor Bericht},
+	pdfproducer={pdfeTex 3.14159-1.30.6-2.2},
+	colorlinks=false,
+	pdfborder=0 0 0	% keine Box um die Links!
+}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}
+%Trennungsregeln
+\hyphenation{Sil-ben-trenn-ung}
+
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\begin{document}
+
+	\frontmatter
+	
+	% Titelseite
+	\thispagestyle{empty}
+	\begin{addmargin*}[4mm]{-10mm}
+		
+		\includegraphics[height=5cm]{images/osi_standard_logo}
+		\hspace{60mm}
+		\includegraphics[height=5cm]{images/gerwinski-gnu-head}
+		
+		\vspace{60mm}
+		{\footnotesize
+			
+			\parbox{140mm}{\bfseries \LARGE \titeltext}\\[2.5em]
+			
+			{\footnotesize \bfseries Executed by:}\\
+			{\footnotesize \fullname\\\email}\\[2em]
+			{\footnotesize\jahr}
+		}
+	\end{addmargin*}
+	
+	% ab hier Zeilenabstand etwas größer
+	\setstretch{1.5}
+	
+	\tableofcontents
+	
+	\mainmatter
+	\thispagestyle{empty}
+	\newpage
+	\input{chapters/introduction}
+	\input{chapters/register_list}
+	\input{chapters/reg}
+	
+
+	\listoffigures
+    \listoftables
+
+
+
+\end{document}
+
+	

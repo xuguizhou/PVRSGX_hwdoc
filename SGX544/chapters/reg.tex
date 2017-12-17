@@ -1,0 +1,20 @@
+\chapter{Register Descritption}
+
+\begin{longtable}[c]{ |C{\regdscBit\textwidth}|C{\regdscRW\textwidth}|C{\regdscHex\textwidth}|p{\regdscDesc\textwidth}| } \hline
+	\multicolumn{3}{ |c| }{Offset: } &  Registername: \textbf{REGNAME} \\ \hline
+	Bit & R/W & Default/Hex & Description \\ \hline
+	31:0 & R/W & 0xFFFFFFFF & NAMEREGISTER \newline \\ \hline
+	\caption{Example table \SGXtype}
+	\label{tab:sample}
+\end{longtable}
+
+
+\input{chapters/reg/clk_gate_ctl}
+\input{chapters/reg/clk_gate_ctl2}
+\input{chapters/reg/clk_gate_status}
+\input{chapters/reg/clk_gate_ctl_ovr}
+\input{chapters/reg/power}
+\input{chapters/reg/core_id}
+\input{chapters/reg/core_rev}
+\input{chapters/reg/core_rev_f1}
+\input{chapters/reg/core_rev_f2}

@@ -1,1 +1,4 @@
-# PVRSGX hwdocu
+# PVRSGX hwdoc
+
+## Requirments:
+* pdflatex

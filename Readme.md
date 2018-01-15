@@ -1,4 +1,6 @@
 # PVRSGX hwdoc
 
 ## Requirments:
-* pdflatex
+*python sphinx
+
+`sudo apt-get install python-sphinx`

@@ -226,9 +226,9 @@ Register List SGX544
 +---------------------------------+---------+----------------------------------------------+
 | Register Name                   | Offset  | Description                                  |
 +=================================+=========+==============================================+
-| MASTER_BIF_CRTL                 | 0x4C00        | Master BIF Control Register            |
+| MASTER_BIF_CRTL                 | 0x4C00  | Master BIF Control Register                  |
 +---------------------------------+---------+----------------------------------------------+
-| MASTER_BIF_INIT_STAT            | 0x4C04        | Master BIF -?- Register                |
+| MASTER_BIF_INIT_STAT            | 0x4C04  | Master BIF -?- Register                      |
 +---------------------------------+---------+----------------------------------------------+
 
 Register List MP Master

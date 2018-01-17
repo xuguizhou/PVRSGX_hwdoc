@@ -1,5 +1,6 @@
 Registers
 =================
+
 .. table template
 +-----------------------------+-------------------------------------------------------+
 | Offset:                     | Registername: **REGISTER_NAME**                       |
@@ -24,3 +25,4 @@ Registers
   registers/core_rev_f1
   registers/core_rev_f2
 .. ./registers/
+

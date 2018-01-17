@@ -53,7 +53,7 @@ source_suffix = '.rst'
 # source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'SGX544_hwdoc_top'
+master_doc = 'index'
 
 # General information about the project.
 project = u'Reverse-Engineered Datasheet PowerVR SGX544'

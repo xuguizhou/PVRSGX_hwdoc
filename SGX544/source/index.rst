@@ -9,7 +9,6 @@ Welcome to Reverse-Engineered Datasheet PowerVR SGX544's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
 
   introduction
   acronyms_and_abbreviations

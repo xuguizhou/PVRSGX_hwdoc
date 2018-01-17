@@ -14,7 +14,6 @@ Registers
 +--------+------+-------------+-------------------------------------------------------+
 
 .. toctree::
-   :maxdepth: 2
 
   registers/clk_gate_ctl
   registers/clk_gate_ctl2

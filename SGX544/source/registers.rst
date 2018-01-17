@@ -24,5 +24,5 @@ Registers
   registers/core_rev
   registers/core_rev_f1
   registers/core_rev_f2
-.. ./registers/
+  registers/soft_reset
 

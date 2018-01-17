@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
   introduction
+  acronyms_and_abbreviations
   register_list
   registers
 

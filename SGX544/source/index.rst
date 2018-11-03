@@ -11,6 +11,8 @@ Contents:
 .. toctree::
 
   introduction
+  features
+  tools
   acronyms_and_abbreviations
   register_list
   registers
